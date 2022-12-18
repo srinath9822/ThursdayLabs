@@ -7,7 +7,7 @@ public class DataRetrieve {
 	void createConnection() {
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","9620413809");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","root");
 		Statement smt=con.createStatement();
 		String sql="select * from authors where city LIKE 'S%'";
 		ResultSet rs=smt.executeQuery(sql);
